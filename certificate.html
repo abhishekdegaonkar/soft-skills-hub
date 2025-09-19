@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Certificate - Soft Skills Hub</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f4f8; text-align: center; padding: 40px; }
+    .form-box { margin-bottom: 30px; }
+    input { padding: 10px; font-size: 1rem; border-radius: 5px; border: 1px solid #ccc; }
+    button { padding: 10px 20px; font-size: 1rem; margin-left: 10px; background: #0077b6; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background: #023e8a; }
+    .certificate { width: 800px; margin: auto; background: white; border: 5px solid #0077b6; padding: 50px; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.2); display: none; }
+    .certificate h1 { font-size: 2.5rem; color: #0077b6; }
+    .certificate h2 { margin-top: 20px; font-size: 1.8rem; }
+    .certificate p { margin-top: 20px; font-size: 1.2rem; }
+    .print-btn { margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>🎓 Get Your Certificate</h1>
+  <div class="form-box">
+    <input type="text" id="studentName" placeholder="Enter your name" />
+    <button onclick="generateCertificate()">Generate Certificate</button>
+  </div>
+
+  <div class="certificate" id="certificateBox">
+    <h1>Certificate of Completion</h1>
+    <h2 id="certName"></h2>
+    <p>Has successfully completed the Soft Skills Course</p>
+    <p><i>Issued by Soft Skills Hub - 2025</i></p>
+    <button class="print-btn" onclick="window.print()">Print Certificate</button>
+  </div>
+
+  <script>
+    function generateCertificate() {
+      let name = document.getElementById('studentName').value;
+      if (name.trim() === "") {
+        alert("Please enter your name!");
+        return;
+      }
+      document.getElementById('certName').innerText = name;
+      document.getElementById('certificateBox').style.display = 'block';
+    }
+  </script>
+</body>
+</html>
