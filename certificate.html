@@ -5,43 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Certificate of Completion</title>
   <style>
-    body { 
-      font-family: Arial, sans-serif; 
-      text-align: center; 
-      background: #f9f9f9; 
+    body {
+      font-family: 'Times New Roman', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f9f9f9;
     }
     .certificate {
-      border: 5px solid #0077b6;
-      padding: 50px;
-      margin: 50px auto;
-      width: 70%;
+      width: 800px;
+      height: 600px;
+      padding: 40px;
+      border: 8px solid #d4af37;
+      text-align: center;
       background: white;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
-    h1 { color: #0077b6; }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 0;
+    }
+    h2 {
+      font-size: 1.8em;
+      margin-top: 10px;
+    }
+    p {
+      font-size: 1.2em;
+    }
     .name {
-      font-size: 2rem;
-      font-weight: bold;
+      font-size: 2em;
+      font-style: italic;
       margin: 20px 0;
+    }
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1em;
+      background: #0077b6;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
     }
   </style>
 </head>
 <body>
-  <div class="certificate">
+  <div class="certificate" id="certificate">
     <h1>Certificate of Completion</h1>
-    <p>This is proudly presented to</p>
-    <p class="name" id="studentName">[Your Name]</p>
-    <p>for successfully completing the Soft Skills Course.</p>
-    <br>
+    <p>This certificate is proudly presented to</p>
+    <div class="name" id="studentName">[Your Name]</div>
+    <p>For successfully completing the Soft Skills Hub Course</p>
+    <h2 id="date"></h2>
+    <p><strong>Instructor:</strong> Soft Skills Hub Team</p>
+  </div>
+
+  <div style="position:absolute; bottom:20px; text-align:center; width:100%;">
     <input type="text" id="nameInput" placeholder="Enter your name">
-    <button onclick="generateCertificate()">Generate Certificate</button>
+    <button class="btn" onclick="generateCertificate()">Get Certificate</button>
   </div>
 
   <script>
     function generateCertificate() {
-      let name = document.getElementById("nameInput").value;
+      const name = document.getElementById("nameInput").value;
+      const date = new Date().toLocaleDateString();
       document.getElementById("studentName").innerText = name;
+      document.getElementById("date").innerText = date;
     }
   </script>
 </body>
