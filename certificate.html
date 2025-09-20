@@ -12,6 +12,7 @@
       align-items: center;
       height: 100vh;
       background: #f9f9f9;
+      flex-direction: column;
     }
     .certificate {
       width: 800px;
@@ -55,15 +56,20 @@
     <h1>Certificate of Completion</h1>
     <p>This certificate is proudly presented to</p>
     <div class="name" id="studentName">[Your Name]</div>
-    <p>For successfully completing the Soft Skills Hub Course</p>
+    <p>For successfully completing the <strong>Soft Skills Hub Full Course</strong></p>
     <h2 id="date"></h2>
     <p><strong>Instructor:</strong> Soft Skills Hub Team</p>
   </div>
 
-  <div style="position:absolute; bottom:20px; text-align:center; width:100%;">
+  <div style="margin-top:20px;">
     <input type="text" id="nameInput" placeholder="Enter your name">
-    <button class="btn" onclick="generateCertificate()">Get Certificate</button>
+    <button class="btn" onclick="generateCertificate()">Generate Certificate</button>
+    <button class="btn" onclick="downloadCertificate()">Download as PDF</button>
   </div>
+
+  <!-- Libraries for PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
   <script>
     function generateCertificate() {
@@ -71,6 +77,18 @@
       const date = new Date().toLocaleDateString();
       document.getElementById("studentName").innerText = name;
       document.getElementById("date").innerText = date;
+      alert("Certificate generated! You can now download it.");
+    }
+
+    async function downloadCertificate() {
+      const certificate = document.getElementById("certificate");
+      const canvas = await html2canvas(certificate);
+      const imgData = canvas.toDataURL("image/png");
+
+      const { jsPDF } = window.jspdf;
+      const pdf = new jsPDF("landscape", "px", [800, 600]);
+      pdf.addImage(imgData, "PNG", 0, 0, 800, 600);
+      pdf.save("certificate.pdf");
     }
   </script>
 </body>
