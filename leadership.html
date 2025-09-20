@@ -5,48 +5,133 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Leadership Skills</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f4f7fa; color: #333; margin: 0; }
-    header { background: #0077b6; color: white; text-align: center; padding: 20px; }
-    .container { max-width: 900px; margin: auto; padding: 40px; }
-    h2 { color: #0077b6; margin-top: 30px; }
-    .exercise { background: #e6f2ff; padding: 20px; border-left: 5px solid #0077b6; margin-top: 20px; border-radius: 10px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #0077b6;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    header a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #0077b6;
+    }
+    h2 {
+      margin-top: 25px;
+      color: #023e8a;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .resources a {
+      display: block;
+      margin: 5px 0;
+      color: #0077b6;
+      text-decoration: none;
+    }
+    .resources a:hover {
+      text-decoration: underline;
+    }
+    .complete-btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+    .complete-btn:hover {
+      background: #023e8a;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Leadership Skills</h1>
+    <h2>Soft Skills Hub</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resources.html">Resources</a>
+      <a href="certificate.html">Certificate</a>
+    </nav>
   </header>
+
   <div class="container">
-    <h2>What is Leadership?</h2>
-    <p>Leadership is the ability to guide, inspire, and influence others towards achieving goals.</p>
+    <h1>Leadership Skills</h1>
 
-    <h2>Why is it Important?</h2>
+    <h2>📘 What You’ll Learn</h2>
     <ul>
-      <li>Builds trust and motivates team members.</li>
-      <li>Helps manage conflicts and challenges.</li>
-      <li>Creates vision and direction for growth.</li>
+      <li>Qualities of a great leader</li>
+      <li>How to inspire and motivate teams</li>
+      <li>Decision-making under pressure</li>
+      <li>Building trust and accountability</li>
+      <li>Adaptive and transformational leadership</li>
     </ul>
 
-    <h2>Key Qualities of a Leader</h2>
+    <h2>🎯 Key Learning Points</h2>
+    <p>
+      Leadership is more than giving orders — it’s about influence, vision, and responsibility. 
+      Great leaders empower their teams, build trust, and adapt to changing environments while maintaining focus on long-term goals.
+    </p>
+
+    <h2>🛠 Exercises</h2>
     <ul>
-      <li>Integrity and honesty</li>
-      <li>Decision-making skills</li>
-      <li>Empathy and communication</li>
-      <li>Accountability</li>
+      <li>Write down your top 5 leadership qualities and how you use them.</li>
+      <li>Take a leadership role in a small group activity or project.</li>
+      <li>Practice decision-making: analyze a situation, list options, and choose the best action.</li>
     </ul>
 
-    <h2>How to Improve?</h2>
-    <ul>
-      <li>Practice active listening with your team.</li>
-      <li>Lead by example and demonstrate honesty.</li>
-      <li>Encourage collaboration and creativity.</li>
-      <li>Accept responsibility for both success and failure.</li>
-    </ul>
-
-    <div class="exercise">
-      <h3>Exercise</h3>
-      <p>Think of a project you worked on. Write down how you would motivate your team if you were the leader.</p>
+    <h2>📖 Resources</h2>
+    <div class="resources">
+      <strong>Books:</strong>
+      <a href="https://www.goodreads.com/book/show/13496.The_21_Irrefutable_Laws_of_Leadership" target="_blank">
+        The 21 Irrefutable Laws of Leadership – John C. Maxwell
+      </a>
+      <a href="https://www.goodreads.com/book/show/25817152-leaders-eat-last" target="_blank">
+        Leaders Eat Last – Simon Sinek
+      </a>
+      <br>
+      <strong>Videos:</strong>
+      <a href="https://www.youtube.com/watch?v=ReRcHdeUG9Y" target="_blank">
+        Simon Sinek: Why Good Leaders Make You Feel Safe (TED Talk)
+      </a>
+      <a href="https://www.youtube.com/watch?v=MB5IX-np5fE" target="_blank">
+        Leadership Training – Brian Tracy
+      </a>
+      <br>
+      <strong>Articles:</strong>
+      <a href="https://hbr.org/2018/11/the-leader-as-coach" target="_blank">
+        Harvard Business Review: The Leader as Coach
+      </a>
+      <a href="https://www.mindtools.com/pages/article/newLDR_41.htm" target="_blank">
+        MindTools: Leadership Skills
+      </a>
     </div>
+
+    <button class="complete-btn" onclick="alert('Leadership module completed! 🎉 Go to the next skill.')">Mark as Complete</button>
   </div>
 </body>
 </html>
