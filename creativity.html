@@ -5,40 +5,135 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Creativity</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f4f7fa; color: #333; margin: 0; }
-    header { background: #0077b6; color: white; text-align: center; padding: 20px; }
-    .container { max-width: 900px; margin: auto; padding: 40px; }
-    h2 { color: #0077b6; margin-top: 30px; }
-    .exercise { background: #e6f2ff; padding: 20px; border-left: 5px solid #0077b6; margin-top: 20px; border-radius: 10px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #0077b6;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    header a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin-top: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #0077b6;
+    }
+    h2 {
+      margin-top: 25px;
+      color: #023e8a;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    .resources a {
+      display: block;
+      margin: 5px 0;
+      color: #0077b6;
+      text-decoration: none;
+    }
+    .resources a:hover {
+      text-decoration: underline;
+    }
+    .complete-btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+    .complete-btn:hover {
+      background: #023e8a;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Creativity</h1>
+    <h2>Soft Skills Hub</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="resources.html">Resources</a>
+      <a href="certificate.html">Certificate</a>
+    </nav>
   </header>
+
   <div class="container">
-    <h2>What is Creativity?</h2>
-    <p>Creativity is the ability to generate new, original, and valuable ideas. It is the foundation of innovation and problem-solving.</p>
+    <h1>Creativity</h1>
 
-    <h2>Why is it Important?</h2>
+    <h2>📘 What You’ll Learn</h2>
     <ul>
-      <li>Drives innovation and progress.</li>
-      <li>Helps solve complex problems.</li>
-      <li>Boosts adaptability and critical thinking.</li>
+      <li>What creativity really means</li>
+      <li>Techniques to spark innovative thinking</li>
+      <li>Overcoming mental blocks</li>
+      <li>Applying creativity in problem-solving</li>
+      <li>Boosting creativity in daily life & work</li>
     </ul>
 
-    <h2>Ways to Boost Creativity</h2>
+    <h2>🎯 Key Learning Points</h2>
+    <p>
+      Creativity isn’t just about art — it’s about generating fresh ideas, solving problems in new ways, 
+      and adapting to challenges with innovation. Creative thinkers are highly valued in workplaces for 
+      their ability to bring unique perspectives and solutions.
+    </p>
+
+    <h2>🛠 Exercises</h2>
     <ul>
-      <li>Brainstorm freely without judgment.</li>
-      <li>Read and explore new topics.</li>
-      <li>Collaborate with diverse people.</li>
-      <li>Practice creative hobbies (writing, art, music).</li>
+      <li>Try “brainstorming without judgment” for 10 minutes on any problem.</li>
+      <li>Use mind maps to connect random ideas and form new solutions.</li>
+      <li>Challenge yourself with the “30 Circles Test” (turn 30 blank circles into unique drawings in 3 minutes).</li>
+      <li>Spend 15 minutes a day doing something outside your routine (read a new genre, walk a different route, etc.).</li>
     </ul>
 
-    <div class="exercise">
-      <h3>Exercise</h3>
-      <p>Choose an everyday object (like a bottle or pen). Write down 5 creative new uses for it.</p>
+    <h2>📖 Resources</h2>
+    <div class="resources">
+      <strong>Books:</strong>
+      <a href="https://www.goodreads.com/book/show/12569.Creativity_Inc" target="_blank">
+        Creativity, Inc. – Ed Catmull
+      </a>
+      <a href="https://www.goodreads.com/book/show/11084145-steal-like-an-artist" target="_blank">
+        Steal Like an Artist – Austin Kleon
+      </a>
+      <br>
+      <strong>Videos:</strong>
+      <a href="https://www.youtube.com/watch?v=f9rtmxJrKwc" target="_blank">
+        TEDx: The Psychology of Creativity
+      </a>
+      <a href="https://www.youtube.com/watch?v=0f8DkT2xR4o" target="_blank">
+        How to Build Your Creative Confidence – David Kelley
+      </a>
+      <br>
+      <strong>Articles:</strong>
+      <a href="https://hbr.org/2019/11/the-creative-mindset" target="_blank">
+        Harvard Business Review: The Creative Mindset
+      </a>
+      <a href="https://www.ideou.com/blogs/inspiration/5-ways-to-boost-your-creativity" target="_blank">
+        IDEO: 5 Ways to Boost Your Creativity
+      </a>
     </div>
+
+    <button class="complete-btn" onclick="alert('Creativity module completed! 🎉')">Mark as Complete</button>
   </div>
 </body>
 </html>
