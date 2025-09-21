@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Professional Etiquette - Soft Skills Hub</title>
+  <style>
+    body{font-family:Arial;margin:0;background:#f9f9f9;color:#333}
+    header{background:#0077b6;color:#fff;padding:15px;text-align:center}
+    .container{max-width:900px;margin:20px auto;padding:24px;background:#fff;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+    h1{text-align:center;color:#0077b6;margin-top:0}
+  </style>
+</head>
+<body>
+  <header><h2>Soft Skills Hub</h2><nav><a href="index.html">Home</a><a href="resources.html">Resources</a><a href="certificate.html">Certificate</a></nav></header>
+  <div class="container">
+    <h1>Professional Etiquette</h1>
+    <p>Professional etiquette covers punctuality, respectful communication, dress code, email manners, and meeting behavior.</p>
+
+    <h2>Practical Tips</h2>
+    <ul>
+      <li>Respond to emails within 24-48 hours</li>
+      <li>Be on time to meetings</li>
+      <li>Use polite, clear language</li>
+    </ul>
+
+    <button id="completeBtn" class="complete-btn">Mark as Complete</button>
+  </div>
+
+  <script>document.getElementById('completeBtn').addEventListener('click',()=>{localStorage.setItem('professional-etiquette','done');alert('Professional Etiquette completed ✅');});</script>
+</body>
+</html>
