@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Cultural Awareness - Soft Skills Hub</title>
+  <style>
+    body{font-family:Arial;margin:0;background:#f9f9f9;color:#333}
+    header{background:#0077b6;color:#fff;padding:15px;text-align:center}
+    .container{max-width:900px;margin:20px auto;padding:24px;background:#fff;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.08)}
+    h1{text-align:center;color:#0077b6;margin-top:0}
+  </style>
+</head>
+<body>
+  <header><h2>Soft Skills Hub</h2><nav><a href="index.html">Home</a><a href="resources.html">Resources</a><a href="certificate.html">Certificate</a></nav></header>
+  <div class="container">
+    <h1>Cultural Awareness</h1>
+    <p>Cultural awareness is understanding and respecting different cultural backgrounds, norms, and communication styles.</p>
+
+    <h2>Practical Tips</h2>
+    <ul>
+      <li>Research cultural norms before interacting internationally</li>
+      <li>Ask respectful questions when unsure</li>
+      <li>Avoid assumptions and stereotypes</li>
+    </ul>
+
+    <button id="completeBtn" class="complete-btn">Mark as Complete</button>
+  </div>
+
+  <script>document.getElementById('completeBtn').addEventListener('click',()=>{localStorage.setItem('cultural-awareness','done');alert('Cultural Awareness completed ✅');});</script>
+</body>
+</html>
