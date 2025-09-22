@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interpersonal Skills</title>
+</head>
+<body>
+  <h1>Interpersonal Skills</h1>
+  <p>
+    Interpersonal skills are the abilities we use to interact effectively with others.
+    These include communication, empathy, conflict resolution, and emotional awareness.
+    Strong interpersonal skills are vital in both personal and professional life.
+  </p>
+
+  <h2>Core Components:</h2>
+  <ul>
+    <li>Active listening</li>
+    <li>Clear communication</li>
+    <li>Respect and empathy</li>
+    <li>Teamwork and collaboration</li>
+    <li>Positive body language</li>
+  </ul>
+
+  <h2>How to Improve:</h2>
+  <p>
+    Engage in conversations openly, ask questions, give constructive feedback, and
+    work on understanding others’ perspectives.
+  </p>
+
+  <!-- ✅ Mark completion button -->
+  <button onclick="markLessonComplete('interpersonal-skills')">Mark as Completed</button>
+
+  <script>
+    function markLessonComplete(lessonName) {
+      localStorage.setItem(lessonName, "completed");
+      alert("Lesson marked as completed!");
+    }
+  </script>
+</body>
+</html>
