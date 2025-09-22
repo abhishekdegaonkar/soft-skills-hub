@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stress Management</title>
+</head>
+<body>
+  <h1>Stress Management</h1>
+  <p>
+    Stress management is the practice of controlling stress levels to maintain 
+    productivity and well-being. Everyone experiences stress, but learning how 
+    to handle it effectively leads to a healthier lifestyle and improved focus.
+  </p>
+
+  <h2>Common Techniques:</h2>
+  <ul>
+    <li>Time management and prioritization</li>
+    <li>Regular physical activity</li>
+    <li>Mindfulness and meditation</li>
+    <li>Healthy lifestyle choices (diet, sleep, hydration)</li>
+    <li>Seeking support from friends or mentors</li>
+  </ul>
+
+  <h2>Why It Matters:</h2>
+  <p>
+    Proper stress management improves decision-making, relationships, and overall 
+    happiness. It helps prevent burnout and promotes resilience in the face of challenges.
+  </p>
+
+  <!-- ✅ Mark completion button -->
+  <button onclick="markLessonComplete('stress-management')">Mark as Completed</button>
+
+  <script>
+    function markLessonComplete(lessonName) {
+      localStorage.setItem(lessonName, "completed");
+      alert("Lesson marked as completed!");
+    }
+  </script>
+</body>
+</html>
