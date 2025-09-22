@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Public Speaking</title>
+</head>
+<body>
+  <h1>Public Speaking</h1>
+  <p>
+    Public speaking is the art of effectively communicating ideas to an audience.
+    It involves confidence, structure, voice control, body language, and the ability
+    to engage people. Mastering public speaking enhances leadership, persuasion, and
+    personal branding.
+  </p>
+
+  <h2>Key Skills:</h2>
+  <ul>
+    <li>Overcoming stage fright</li>
+    <li>Structuring speeches</li>
+    <li>Using visual aids</li>
+    <li>Storytelling techniques</li>
+    <li>Voice modulation and clarity</li>
+  </ul>
+
+  <h2>Tips for Success:</h2>
+  <p>
+    Practice regularly, record yourself, focus on your audience, and keep improving
+    with feedback. Remember: great speakers inspire confidence and trust.
+  </p>
+
+  <!-- ✅ Mark completion button -->
+  <button onclick="markLessonComplete('public-speaking')">Mark as Completed</button>
+
+  <script>
+    function markLessonComplete(lessonName) {
+      localStorage.setItem(lessonName, "completed");
+      alert("Lesson marked as completed!");
+    }
+  </script>
+</body>
+</html>
