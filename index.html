@@ -33,7 +33,7 @@
     }
     .container {
       padding: 40px;
-      max-width: 1000px;
+      max-width: 1200px;
       margin: auto;
     }
     h2 {
@@ -42,7 +42,7 @@
     }
     .skills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
     }
     .card {
@@ -82,64 +82,33 @@
   <div class="container">
     <h2>Explore Soft Skills</h2>
     <div class="skills-grid">
-      <div class="card">
-        <h3>Communication</h3>
-        <p>Learn how to express ideas clearly and confidently.</p>
-        <a href="communication.html">Start Learning</a>
-      </div>
-      <div class="card">
-        <h3>Leadership</h3>
-        <p>Develop the ability to guide and inspire teams effectively.</p>
-        <a href="leadership.html">Start Learning</a>
-      </div>
-      <div class="card">
-        <h3>Time Management</h3>
-        <p>Learn to manage your time and boost productivity.</p>
-        <a href="time-management.html">Start Learning</a>
-      </div>
-      <div class="card">
-        <h3>Emotional Intelligence</h3>
-        <p>Understand and manage emotions in yourself and others.</p>
-        <a href="emotional-intelligence.html">Start Learning</a>
-      </div>
-      <div class="card">
-        <h3>Creativity</h3>
-        <p>Unlock creative thinking and innovation skills.</p>
-        <a href="creativity.html">Start Learning</a>
-      </div>
+
+      <div class="card"><h3>Communication</h3><p>Express ideas clearly and confidently.</p><a href="communication.html">Start Learning</a></div>
+      <div class="card"><h3>Leadership</h3><p>Guide and inspire teams effectively.</p><a href="leadership.html">Start Learning</a></div>
+      <div class="card"><h3>Time Management</h3><p>Manage time and boost productivity.</p><a href="time-management.html">Start Learning</a></div>
+      <div class="card"><h3>Emotional Intelligence</h3><p>Understand and manage emotions.</p><a href="emotional-intelligence.html">Start Learning</a></div>
+      <div class="card"><h3>Creativity</h3><p>Unlock creative thinking and innovation.</p><a href="creativity.html">Start Learning</a></div>
+      <div class="card"><h3>Teamwork</h3><p>Collaborate effectively in groups.</p><a href="teamwork.html">Start Learning</a></div>
+      <div class="card"><h3>Critical Thinking</h3><p>Analyze problems logically and clearly.</p><a href="critical-thinking.html">Start Learning</a></div>
+      <div class="card"><h3>Problem Solving</h3><p>Find practical solutions to challenges.</p><a href="problem-solving.html">Start Learning</a></div>
+      <div class="card"><h3>Adaptability</h3><p>Adjust to new environments and change.</p><a href="adaptability.html">Start Learning</a></div>
+      <div class="card"><h3>Conflict Resolution</h3><p>Resolve disagreements peacefully.</p><a href="conflict-resolution.html">Start Learning</a></div>
+      <div class="card"><h3>Decision Making</h3><p>Make effective and timely decisions.</p><a href="decision-making.html">Start Learning</a></div>
+      <div class="card"><h3>Negotiation</h3><p>Achieve win-win agreements.</p><a href="negotiation.html">Start Learning</a></div>
+      <div class="card"><h3>Public Speaking</h3><p>Speak confidently in front of audiences.</p><a href="public-speaking.html">Start Learning</a></div>
+      <div class="card"><h3>Interpersonal Skills</h3><p>Build positive relationships.</p><a href="interpersonal-skills.html">Start Learning</a></div>
+      <div class="card"><h3>Stress Management</h3><p>Handle pressure and maintain calm.</p><a href="stress-management.html">Start Learning</a></div>
+      <div class="card"><h3>Active Listening</h3><p>Listen carefully and respond effectively.</p><a href="active-listening.html">Start Learning</a></div>
+      <div class="card"><h3>Professional Etiquette</h3><p>Behave professionally in workplace settings.</p><a href="professional-etiquette.html">Start Learning</a></div>
+      <div class="card"><h3>Collaboration</h3><p>Work productively with diverse teams.</p><a href="collaboration.html">Start Learning</a></div>
+      <div class="card"><h3>Motivation & Self-Discipline</h3><p>Stay driven and focused on goals.</p><a href="motivation.html">Start Learning</a></div>
+      <div class="card"><h3>Cultural Awareness</h3><p>Respect and adapt to different cultures.</p><a href="cultural-awareness.html">Start Learning</a></div>
+
     </div>
   </div>
 
   <footer>
     <p>&copy; 2025 Soft Skills Hub | Learn. Grow. Succeed.</p>
   </footer>
-
-  <!-- 🔹 Firebase SDK -->
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"></script>
-
-  <script>
-    // Replace these values with your Firebase project config
-    const firebaseConfig = {
-      apiKey: "YOUR_API_KEY",
-      authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-      projectId: "YOUR_PROJECT_ID",
-      storageBucket: "YOUR_PROJECT_ID.appspot.com",
-      messagingSenderId: "YOUR_SENDER_ID",
-      appId: "YOUR_APP_ID"
-    };
-
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    const auth = firebase.auth();
-
-    // 🔹 Check login before allowing access
-    auth.onAuthStateChanged(user => {
-      if (!user) {
-        alert("Please login first!");
-        window.location.href = "login.html"; // redirect to login page
-      }
-    });
-  </script>
 </body>
 </html>
